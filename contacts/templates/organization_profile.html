@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="app-content content container-fluid container">
+	<div class="content-wrapper">
+	  <div class="content-header row">
+		<div class="content-header-left col-md-12 col-xs-12 mb-1">
+		  <h2 class="content-header-title text-xs-center">Organization Profile</h2>
+		</div>
+		</div>
+	  </div>
+<div class="content-body container"><!-- Basic form layout section start -->
+
+
+
+<br />
+
+<!-- {{ contact.company.pk }} -->
+<div class="table-responsive container border">
+	<table class="table">
+	  <tbody>
+		  <tr>
+			  <td>Organization Name</td>
+			  <td class="text-xs-right">{{ organization.name }}</td>
+		  </tr>
+		  <tr>
+			<td>GST No.</td>
+			<td class="text-xs-right">{{ organization.gst_no }}</td>
+			</tr>
+		  <tr>
+			  <td>Primary Email</td>
+			  <td class="text-xs-right">{{ organization.primary_email }}</td>
+		  </tr>
+		  <tr>
+			<td>Secondary Email</td>
+			<td class="text-xs-right">{{ organization.secondary_email }}</td>
+			</tr>
+		  <tr>
+			  <td class="text-bold-800">Primary Phone</td>
+			  <td class="text-bold-800 text-xs-right">{{ organization.primary_phone }}</td>
+		  </tr>
+		  <tr>
+			<td>Secondary Phone</td>
+			<td class="text-xs-right">{{ organization.secondary_phone }}</td>
+			</tr>
+		  <tr>
+			<td>Address</td>
+			<td class="text-xs-right">{{ organization.address }}</td>
+		</tr>
+		<tr>
+			<td>City</td>
+			<td class="text-xs-right">{{ organization.city }}</td>
+		</tr>
+		<tr>
+			<td>State</td>
+			<td class="text-xs-right">{{ organization.state }}</td>
+		</tr>
+
+		  <!-- <tr>
+			  <td>Payment Made</td>
+			  <td class="pink text-xs-right">(-) $ 4,688.00</td>
+		  </tr>
+		  <tr class="bg-grey bg-lighten-4">
+			  <td class="text-bold-800">Balance Due</td>
+			  <td class="text-bold-800 text-xs-right">$ 12,000.00</td>
+		  </tr> -->
+	  </tbody>
+	</table>
+</div>
+
+
+
+
+
+    </div>
+</div>
+
+{% endblock %}
